@@ -9,18 +9,12 @@
 }
 
 
-
-
-
 /*-------------------------------HEADER-----------------------------------------------*/
 
 header{
     position: sticky;
     top: 0;
     background-color: #181818;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
 }
 
