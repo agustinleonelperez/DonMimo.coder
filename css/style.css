@@ -233,9 +233,9 @@ footer .menu li {
 }
 
 footer .social-icon li a {
-font-size: 2em;
+font-size: 40px;
 color: #DDBA47;
-margin: 0 10px;
+margin: 5px;
 display: inline-block;
 transition: 0.5s;
 }
@@ -246,7 +246,7 @@ footer .social-icon li a:hover{
 
 footer .menu li a {
     font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
+    font-size: 20px;
     color: #DDBA47;
     margin: 0 10px;
     display: inline-block;
@@ -308,8 +308,8 @@ footer p{
         margin: 5px;
     }
     .tituloprincipal p{
-    font-size: 20px;
-    margin: 10px;
+        font-size: 20px;
+        margin: 10px;
     }
     .botontitulo{
         font-size: 12px;
@@ -333,6 +333,15 @@ footer p{
 
     .productos h2{
         font-size: 35px;
+    }
+}
+
+@media screen and (max-width:445px){
+    footer ul.menu {
+        display: none;
+    }
+    p {
+        display: none;
     }
 }
 
