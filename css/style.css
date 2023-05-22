@@ -20,7 +20,7 @@ header{
 
 header img{
     width: 170px;
-    height: 150px;  
+    height: 190px;  
 }
 
 header nav ul{
@@ -91,7 +91,7 @@ header nav{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 35px;
-    color: beige;
+    color: rgb(245, 245, 220);
     margin-bottom: 20px;
 }
 
@@ -154,8 +154,8 @@ header nav{
 }
 
 .producto > img {
-    width: 93%;
-    height: 230px;
+    width: 95%;
+    height: 250px;
 }
 
 .producto h3{
@@ -302,9 +302,9 @@ footer p{
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:525px){
     .tituloprincipal h1{
-        font-size: 40px;
+        font-size: 30px;
         margin: 5px;
     }
     .tituloprincipal p{
@@ -314,6 +314,13 @@ footer p{
     .botontitulo{
         font-size: 12px;
         
+    }
+    header img{
+        width: 120px;
+        height: 140px;
+    }
+    .productos h2{
+        font-size: 35px;
     }
 }
 
@@ -332,7 +339,7 @@ footer p{
     }
 
     .productos h2{
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
@@ -343,13 +350,11 @@ footer p{
     p {
         display: none;
     }
-}
-
-@media screen and (max-width:360px){
     .productos h2{
         font-size: 20px;
     }
 }
+
 
 /*-----------------------PSEUDOCLASES-----------------------------------*/
 
