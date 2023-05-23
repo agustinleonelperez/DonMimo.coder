@@ -1,0 +1,37 @@
+//* VARIABLES
+$color-principal:#DDBA47;
+$color-secundario:#181818;
+
+//* LISTAS
+$colores:
+black,
+#DDBA47,
+#181818,
+#ddba4785,
+#181818ea,
+white,
+beige;
+
+$font-size:
+5px,
+10px,
+15px,
+20px,
+25px,
+30px,
+35px,
+40px,
+45px,
+50px,
+70px,
+80px,
+90px,
+100px;
+
+//* EXTENDS
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

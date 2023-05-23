@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.tituloprincipal, .productos .contenedor-productos, footer .social-icon, footer .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #181818;
+  padding: 10px; }
+  header nav {
+    background-color: #181818; }
+    header nav img {
+      width: 170px;
+      height: 190px; }
+
+div ul {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  list-style: none;
+  font-style: normal;
+  display: flex;
+  margin: 40px; }
+  div ul li {
+    display: inline-block;
+    margin: 30px; }
+    div ul li .nav-link {
+      color: #DDBA47 !important;
+      transition: 0.7s; }
+      div ul li .nav-link:hover {
+        color: white !important; }
+
+main .soportefixed {
+  position: fixed;
+  right: 100px;
+  bottom: 80px; }
+
+.tituloprincipal {
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/patron hamburguesa1.jpg");
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed; }
+  .tituloprincipal h1 {
+    font-size: 70px;
+    color: white;
+    font-family: 'DynaPuff', cursive;
+    font-weight: 400;
+    border: 2px solid #ddba4785;
+    padding: 25px;
+    margin: 20px;
+    background-color: #ddba4785;
+    border-radius: 10px;
+    box-shadow: 1px 1px 65px 6px rgba(221, 186, 71, 0.87);
+    -webkit-box-shadow: 1px 1px 65px 6px rgba(221, 186, 71, 0.87);
+    -moz-box-shadow: 1px 1px 65px 6px rgba(221, 186, 71, 0.87); }
+  .tituloprincipal p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: beige;
+    margin-bottom: 20px; }
+  .tituloprincipal .botontitulo {
+    color: #181818;
+    background-color: #DDBA47;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: 0.5s; }
+    .tituloprincipal .botontitulo:hover {
+      background-color: rgba(0, 0, 0, 0.541);
+      color: #DDBA47; }
+
+.grid-galeria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+  gap: 25px;
+  background-color: #181818; }
+  .grid-galeria .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 1px 9px 10px 2px rgba(221, 186, 71, 0.68);
+    -webkit-box-shadow: 1px 9px 10px 2px rgba(221, 186, 71, 0.68);
+    -moz-box-shadow: 1px 9px 10px 2px rgba(221, 186, 71, 0.68); }
+
+.img-1 {
+  grid-row: span 3; }
+
+.img-5 {
+  grid-row: span 2; }
+
+.productos h2 {
+  color: beige;
+  font-family: 'DynaPuff', cursive;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  background-color: #181818ea;
+  padding: 25px; }
+  .productos h2::first-letter {
+    color: #DDBA47;
+    font-size: 80px;
+    font-style: italic;
+    margin: 5px; }
+
+.productos .contenedor-productos {
+  flex-wrap: wrap;
+  margin: 50px; }
+
+.productos .producto {
+  width: 250px;
+  height: 340px;
+  border: 1px rgba(0, 0, 0, 0) solid;
+  text-align: center;
+  margin: 20px;
+  display: inline-block;
+  background-color: rgba(245, 245, 220, 0.596);
+  border-radius: 7px;
+  box-shadow: 10px 10px 23px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 23px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 23px -5px rgba(0, 0, 0, 0.75); }
+  .productos .producto img {
+    width: 95%;
+    height: 250px; }
+  .productos .producto h3 {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    margin-bottom: 25px; }
+  .productos .producto .botonmenu {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background-color: #DDBA47;
+    text-decoration: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-color: #DDBA47;
+    color: white;
+    padding: 10px; }
+    .productos .producto .botonmenu:hover {
+      background-color: #181818;
+      color: #DDBA47; }
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #181818;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  footer .social-icon, footer .menu {
+    position: relative;
+    margin: 10px 0; }
+  footer .social-icon li, footer .menu li {
+    list-style: none; }
+  footer .social-icon li a {
+    font-size: 40px;
+    color: #DDBA47;
+    margin: 5px;
+    display: inline-block;
+    transition: 0.5s; }
+    footer .social-icon li a:hover {
+      transform: translateY(-10px); }
+  footer .menu li a {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #DDBA47;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none; }
+    footer .menu li a:hover {
+      color: white;
+      opacity: 1; }
+  footer p {
+    font-family: 'Lato', sans-serif;
+    color: #DDBA47;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px; }
+
+@media screen and (max-width: 950px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 220px; }
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1; } }
+
+@media screen and (max-width: 745px) {
+  .soportefixed {
+    display: none; }
+  header {
+    flex-direction: column; }
+  header nav ul {
+    flex-direction: column; }
+  header nav ul li {
+    margin: 5px;
+    text-align: center; } }
+
+@media screen and (max-width: 525px) {
+  .tituloprincipal h1 {
+    font-size: 30px;
+    margin: 5px; }
+  .tituloprincipal p {
+    font-size: 20px;
+    margin: 10px; }
+  .botontitulo {
+    font-size: 12px; }
+  header img {
+    width: 120px;
+    height: 140px; }
+  .productos h2 {
+    font-size: 35px; } }
+
+@media screen and (max-width: 491px) {
+  .grid-galeria {
+    grid-template-columns: 1fr; }
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1; }
+  .producto {
+    flex-direction: column; }
+  .productos h2 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 445px) {
+  footer ul.menu {
+    display: none; }
+  p {
+    display: none; }
+  .productos h2 {
+    font-size: 20px; } }
