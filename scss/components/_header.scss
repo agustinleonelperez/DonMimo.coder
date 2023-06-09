@@ -1,34 +1,58 @@
-header{
+header {
     position: sticky;
     top: 0;
     background-color: $color-secundario;
     padding: 10px;
-    nav{
-        background-color: $color-secundario;
-            img{
-                width: 170px;
-                height: 190px
-            }
+    z-index: 9999;
+    img {
+        width: 120px;
+        object-fit: contain;
         }
-    }
-    div{
-        ul{
+        nav {
+        background-color: $color-secundario;
+            ul {
             font-family: 'Lato', sans-serif;
             font-weight: 400;
             list-style: none;
             font-style: normal;
             display: flex;
             margin: 40px;
-            li{
+                li {
                 display: inline-block;
                 margin: 30px;
-                .nav-link{
-                    color: $color-principal !important;
+                    a {
+                    font-family: 'Lato', sans-serif;
+                    text-decoration: none;
+                    color: $color-principal;
                     transition: 0.7s;
-                    &:hover{
+                    &:hover {
+                        transform: scale(1.1);
                         color: nth($colores, 6) !important;
                     }
                 }
             }
         }
     }
+}
+
+.navbar-toggler {
+    background-color: $color-principal;
+    border: none;
+    .line {
+        width: 100%;
+        float: left;
+        height: 2px;
+        background-color: nth($colores, 6);
+        margin-bottom: 5px;
+    }
+}
+.nav-link {
+    color: $color-principal !important;
+    transition: 0.7s;
+    &:hover{
+        color: nth($colores, 6) !important;
+    }
+}
+.boton {
+    text-decoration: none;
+}

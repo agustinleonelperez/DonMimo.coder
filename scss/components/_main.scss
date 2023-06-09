@@ -1,21 +1,43 @@
-main {
-    .soportefixed {
-        position: fixed;
-        right: 100px;
-        bottom: 80px;
+.whatsapp{
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+}
+
+.navbar-toggler{
+    background-color: $color-principal;
+    border:none;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: nth($colores, 6);
+    margin-bottom: 5px;
+}
+
+.nav-link {
+    color: $color-principal !important;
+    transition: 0.7s;
+    &:hover{
+        color: nth($colores, 6) !important;
     }
+}
+
+.boton {
+    text-decoration: none;
 }
 
 .tituloprincipal{
     @extend %flex;
     flex-direction: column;
-    justify-content: center;
     background-image: url("../img/patron\ hamburguesa1.jpg");
     width: 100%;
     height: 100vh;
+    text-align: center;
     background-attachment: fixed;
     h1{
-        font-size: nth($font-size, 11);
+        font-size: nth($font-size, 14);
         color: nth($colores, 6);
         font-family: 'DynaPuff', cursive;
         font-weight: 400;
@@ -31,115 +53,223 @@ main {
     p{
         font-family: 'Lato', sans-serif;
         font-weight: 400;
-        font-size: nth($font-size, 7);
+        font-size: nth($font-size, 9);
         color: nth($colores, 7);
         margin-bottom: 20px;
     }
-    .botontitulo{
-        color: $color-secundario;
-        background-color: $color-principal;
-        text-decoration: none;
-        padding: 10px;
-        font-size: nth($font-size, 4);
-        font-family: 'Lato', sans-serif;
-        font-weight: bold;
-        font-weight: 500;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        transition: 0.5s;
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.541);
-            color: $color-principal;
-        }
+}
+
+.botontitulo{
+    color: black;
+    background-color: $color-principal;
+    text-decoration: none;
+    padding: 10px;
+    font-size: nth($font-size, 6);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.541);
+        color: $color-principal;
     }
 }
 
-.grid-galeria {
+.botonmenu{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background-color: $color-principal;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: nth($font-size, 3);
+    &:hover{
+        background-color: $color-secundario;
+        color: $color-principal;
+    }
+}
+
+.grid-galeria{  
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 400px;
     gap: 25px;
     background-color: $color-secundario;
-.grid-item {
-        img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        box-shadow: 1px 9px 10px 2px rgba(221, 186, 71, 0.68);
-        -webkit-box-shadow: 1px 9px 10px 2px rgba(221, 186, 71, 0.68);
-        -moz-box-shadow: 1px 9px 10px 2px rgba(221, 186, 71, 0.68);
-        }
-    }
 }
 
-.img-1 {
+.img-1{  
     grid-row: span 3;
+    margin-bottom: 15px;
 }
 
-.img-5 {
+.img-5{
     grid-row: span 2;
+    margin-bottom: 15px;
 }
 
-.productos{
+.img-6{  
+    margin-bottom: 15px;
+}
+
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 12px 2px rgba(221, 186, 71, 0.68);
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(221, 186, 71, 0.68);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(221, 186, 71, 0.68);
+}
+
+.productos h2 {
+    color: nth($colores, 7);
+    font-family: 'DynaPuff', cursive;
+    font-weight: 400;
+    font-size: nth($font-size, 12);
+    text-align: center;
+    background-color: nth($colores, 5);
+    padding: 25px;
+    &::first-letter{
+        color: $color-principal;
+        font-size: 80px;
+        font-style: italic;
+        margin: 5px;
+        }
+    }
+
+.contenedor-productos{
+    @extend %flex;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.producto{
+    width: 250px;
+    height: 340px;
+    border: 1px rgba(0, 0, 0, 0) solid;
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    background-color: rgba(245, 245, 220, 0.596);
+    border-radius: 7px;
+    box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.75);
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.05);
+    }
+    img{
+        width: 95%;
+        height: 250px;
+        object-fit: contain;
+    }
+    h3{
+        font-size: nth($font-size, 6);
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    p{
+        font-size: nth($font-size, 5);
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: $color-secundario;
+    }
+    a{
+        background-color: $color-principal;
+        color: white;
+        padding: 10px;
+    }
+}
+
+.backgroundnosotros{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    background: rgb(221,186,71);
+    background: linear-gradient(336deg, rgba(221,186,71,0.6334908963585435) 23%, rgba(24,24,24,0.5354516806722689) 50%, rgba(222,222,222,0.8435749299719888) 66%);
+}
+
+.placeright{
+    flex-direction: row-reverse;
+}
+
+.sobrenosotros{
+    @extend %flex;
+    max-width: 1000px;
+    gap: 50px;
+    padding-left:30px;
+    padding-right:30px;
+    img{
+        width: 300px;
+        border-radius: 25% 10%;
+        box-shadow: 0px 0px 12px 9px rgba(221,186,71,0.59);
+        -webkit-box-shadow: 0px 0px 12px 9px rgba(221,186,71,0.59);
+        -moz-box-shadow: 0px 0px 12px 9px rgba(221,186,71,0.59);
+    }
     h2{
-        color: beige;
         font-family: 'DynaPuff', cursive;
-        font-weight: 400;
-        font-size: nth($font-size, 10);
-        text-align: center;
-        background-color: #181818ea;
-        padding: 25px;
-        &::first-letter{
-            color: $color-principal;
-            font-size: nth($font-size, 12);
-            font-style: italic;
-            margin: 5px;
-        }
+        color: $color-principal;
+        font-size: 50px;
     }
-    .contenedor-productos{
-        @extend %flex;
-        flex-wrap: wrap;
-        margin: 50px;
+    hr{
+        border-top: 1px solid #181818;
     }
-    .producto{
-        width: 250px;
-        height: 340px;
-        border: 1px rgba(0, 0, 0, 0) solid;
-        text-align: center;
-        margin: 20px;
-        display: inline-block;
-        background-color: rgba(245, 245, 220, 0.596);
-        border-radius: 7px;
-        box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.75);
-        img{
-            width: 95%;
-            height: 250px;
-        }
-        h3{
-            font-size: nth($font-size, 4);
-            font-family: 'Lato', sans-serif;
-            font-weight: 600;
-            margin-bottom: 25px;
-        }
-        .botonmenu{
-            color: white;
-            font-family: 'Lato', sans-serif;
-            font-weight: 500;
-            background-color: $color-principal;
-            text-decoration: none;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            transition: 0.5s;
-            background-color: $color-principal;
-            color: white;
-            padding: 10px;
-            &:hover{
-                background-color: $color-secundario;
-                color: $color-principal;
-            }
-        }
+    p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #181818;
+    font-size: 20px; 
     }
+}
+
+
+p::selection {
+    background-color: $color-principal;
+    color:  nth($colores, 6);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.mapa {
+    margin-top:30px;
+    width:100%;
+    height: 100%;
+}
+
+.mapa iframe {
+    width:100%;
+    height: 600px;
+}
+
+.comentario h2{
+    font-family: 'DynaPuff', cursive;
+    color: nth($colores, 7);
+    font-size: nth($font-size, 12);
+    text-align: center;
+    background-color: nth($colores, 5);
+    padding: 25px;
+}
+
+.mb-3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: nth($font-size, 6);
+    color: $color-secundario;
+}
+
+.form-control {
+    border-color: $color-principal;
 }

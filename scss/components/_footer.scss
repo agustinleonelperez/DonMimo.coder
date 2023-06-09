@@ -1,23 +1,28 @@
-footer{
+footer {
     position: relative;
     width: 100%;
-    background-color: $color-secundario;
+    background-color:$color-secundario;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .social-icon, .menu{
+
+    .social-icon,
+    .menu {
         position: relative;
         @extend %flex;
         margin: 10px 0;
     }
-    .social-icon li, .menu li{
+
+    .social-icon li,
+    .menu li {
         list-style: none;
     }
-    .social-icon li a{
-        font-size: nth($font-size, 8);
+
+    .social-icon li a {
+        font-size: nth($font-size, 10);
         color: $color-principal;
         margin: 5px;
         display: inline-block;
@@ -26,24 +31,25 @@ footer{
             transform: translateY(-10px);
         }
     }
-    .menu li a{
+
+    .menu li a {
         font-family: 'Lato', sans-serif;
-        font-size: nth($font-size, 4);
+        font-size: nth($font-size, 6);
         color: $color-principal;
         margin: 0 10px;
         display: inline-block;
         text-decoration: none;
-        &:hover{
-        color: nth($colores, 6);
-        opacity: 1;
+        &:hover {
+            color: nth($colores, 6);
+            opacity: 1;
         }
     }
-    p{
+    p {
         font-family: 'Lato', sans-serif;
         color: $color-principal;
         text-align: center;
         margin-top: 10px;
         margin-bottom: 10px;
-        font-size: nth($font-size, 4);
+        font-size: 1.1em;
     }
 }
