@@ -243,6 +243,12 @@ p::selection {
     justify-content: center;
 }
 
+.btn:hover {
+    background-color: #181818;
+    color: #DDBA47;
+    transition: 0.5s;
+}
+
 .mapa {
     margin-top:30px;
     width:100%;
